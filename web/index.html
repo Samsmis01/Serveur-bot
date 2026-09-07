@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ATOMIC CORE — Pairing</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="brand">⚛️ ATOMIC CORE</div>
+    <h1>Connexion WhatsApp</h1>
+    <p class="muted">Entre ton numéro au format international, sans + ni espaces.</p>
+
+    <label for="phone">Numéro WhatsApp</label>
+    <input id="phone" inputmode="numeric" autocomplete="tel" placeholder="243XXXXXXXXX">
+
+    <button id="pair">Générer le code</button>
+
+    <section id="result" class="result hidden">
+      <div class="label">CODE DE PAIRING</div>
+      <div id="code" class="code">--------</div>
+      <button id="copy" class="secondary">Copier le code</button>
+      <p id="message"></p>
+    </section>
+
+    <div id="error" class="error hidden"></div>
+
+    <hr>
+    <p class="tiny">Après génération : WhatsApp → Paramètres → Appareils connectés → Lier un appareil → Lier avec un numéro de téléphone.</p>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
