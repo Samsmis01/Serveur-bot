@@ -1,0 +1,14 @@
+services:
+  pairing:
+    build: ./server-1-pairing
+    restart: unless-stopped
+    env_file: ./server-1-pairing/.env
+    volumes:
+      - ./shared/sessions:/app/sessions
+
+  bot:
+    build: ./server-2-bot
+    restart: unless-stopped
+    env_file: ./server-2-bot/.env
+    volumes:
+      - ./shared/sessions:/app/sessions

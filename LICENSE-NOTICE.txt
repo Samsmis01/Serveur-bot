@@ -1,0 +1,4 @@
+This project is a user-created integration using the unofficial Baileys library.
+Baileys is MIT licensed and is not affiliated with WhatsApp.
+Use the software only with accounts you own or have explicit authorization to operate.
+Respect WhatsApp's Terms of Service and applicable law.
